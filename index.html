@@ -4,50 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
+    <title>Form Validation</title>
 </head>
 <body>
-    <h1>CALCULATOR</h1>
-
     <div class="container">
-        <form>
-            <p>ZEST</p>
-            <input type="text" name="display" id="display">
-            
-            <input type="button" class="button op" value="^2" onclick="power()">
-            <input type="button" class="button op" value="%" onclick="display.value += '%'">
-            <input type="button" class="button clear" value="AC" onclick="display.value = ''">
-            <input type="button" class="button clear" value="⌫" onclick="backspace()">
-            <br>
-            <input type="button" class="button no" value="7" onclick="display.value += '7'">    
-            <input type="button" class="button no" value="8" onclick="display.value += '8'">
-            <input type="button" class="button no" value="9" onclick="display.value += '9'">
-            <input type="button" class="button op" value="/" onclick="display.value += '/'">
-            <br>
-            <input type="button" class="button no" value="4" onclick="display.value += '4'">
-            <input type="button" class="button no" value="5" onclick="display.value += '5'">
-            <input type="button" class="button no" value="6" onclick="display.value += '6'">
-            <input type="button" class="button op" value="*" onclick="display.value += '*'">
-            <br>
-            <input type="button" class="button no" value="1" onclick="display.value += '1'">
-            <input type="button" class="button no" value="2" onclick="display.value += '2'">
-            <input type="button" class="button no" value="3" onclick="display.value += '3'">
-            <input type="button" class="button op" value="+" onclick="display.value += '+'">
-            <br>
-            <input type="button" class="button no" value="." onclick="display.value += '.'">
-            <input type="button" class="button no" value="0" onclick="display.value += '0'">
-            <input type="button" class="button equal" value="=" onclick="calculate()">
-            <input type="button" class="button op" value="-" onclick="display.value += '-'">
-            
-
-
-
-
-
-
-        </form> 
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Name</label>
+                <input type="text" placeholder="Full Name" id="username" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="abc@gmail.com" id="email" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Ph no:</label>
+                <input type="number" placeholder="**********" id="phno" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="password2"/>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
     </div>
-    
+
 
 
     <script src="script.js"></script>
